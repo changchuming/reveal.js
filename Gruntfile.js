@@ -105,6 +105,7 @@ module.exports = function(grunt) {
 				'index.html',
 				'css/**',
 				'js/**',
+				'assets/**',
 				'lib/**',
 				'images/**',
 				'plugin/**'
@@ -126,6 +127,9 @@ module.exports = function(grunt) {
 			css: {
 				files: [ 'css/reveal.scss' ],
 				tasks: 'css-core'
+			},
+			assets: {
+				files: [ 'assets/*' ]
 			},
 			html: {
 				files: [ 'index.html']
